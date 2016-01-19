@@ -1,0 +1,196 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FC486BA-B5C8-427A-8143-5D571DF3E85E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABB.Flow</RootNamespace>
+    <AssemblyName>Flow</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\BankFlow.cs" />
+    <Compile Include="Admin\CreditCardFlow.cs" />
+    <Compile Include="Admin\DepartmentFlow.cs" />
+    <Compile Include="Admin\DivisionFlow.cs" />
+    <Compile Include="Admin\MessageFlow.cs" />
+    <Compile Include="Admin\OfficerFlow.cs" />
+    <Compile Include="Admin\PositionFlow.cs" />
+    <Compile Include="Admin\TitleFlow.cs" />
+    <Compile Include="Admin\UserFlow.cs" />
+    <Compile Include="AppFlow.cs" />
+    <Compile Include="EIS\EISReportSendbackMonthFlow.cs" />
+    <Compile Include="EIS\EISReportReturnMonthFlow.cs" />
+    <Compile Include="EIS\EISReportSupportMonthFlow.cs" />
+    <Compile Include="EIS\EISReportStockoutMonthFlow.cs" />
+    <Compile Include="EIS\EISReportStockinMonthFlow.cs" />
+    <Compile Include="EIS\EISReportProductionMonthFlow.cs" />
+    <Compile Include="EIS\EISReportPriceSaleMonthFlow.cs" />
+    <Compile Include="EIS\EISReportSaleMonthFlow.cs" />
+    <Compile Include="EIS\EISReportProductionFlow.cs" />
+    <Compile Include="EIS\EISCommonFlow.cs" />
+    <Compile Include="EIS\EISReportPriceSaleFlow.cs" />
+    <Compile Include="EIS\EISReportReturnFlow.cs" />
+    <Compile Include="EIS\EISReportSaleFlow.cs" />
+    <Compile Include="EIS\EISReportSendbackFlow.cs" />
+    <Compile Include="EIS\EISReportStockinFlow.cs" />
+    <Compile Include="EIS\EISReportStockoutFlow.cs" />
+    <Compile Include="EIS\EISReportSupportFlow.cs" />
+    <Compile Include="Handheld\FG\StockInPDFlow.cs" />
+    <Compile Include="Handheld\FG\StockInPOFlow.cs" />
+    <Compile Include="Handheld\FG\StockOutFGFlow.cs" />
+    <Compile Include="Handheld\StockCheckBatchFlow.cs" />
+    <Compile Include="Handheld\WH\StockInPDFlow.cs" />
+    <Compile Include="Handheld\WH\StockInPOFlow.cs" />
+    <Compile Include="Handheld\WH\StockOutWHFlow.cs" />
+    <Compile Include="Inventory\FG\ControlTransportFlow.cs" />
+    <Compile Include="Inventory\FG\Master\BasketFlow.cs" />
+    <Compile Include="Inventory\FG\Master\BasketSearchFlow.cs" />
+    <Compile Include="Inventory\FG\Master\ControlStockFlow.cs" />
+    <Compile Include="Inventory\FG\Master\ControlStockSearchFlow.cs" />
+    <Compile Include="Inventory\FG\PlanDetailPopupFlow.cs" />
+    <Compile Include="Inventory\FG\PlanInventoryFlow.cs" />
+    <Compile Include="Inventory\FG\StockInFlow.cs" />
+    <Compile Include="Inventory\FG\StockinReturnFlow.cs" />
+    <Compile Include="Inventory\FG\StockoutBasketFlow.cs" />
+    <Compile Include="Inventory\FG\StockOutFGFlow.cs" />
+    <Compile Include="Inventory\FG\StockoutFlow.cs" />
+    <Compile Include="Inventory\FG\ToDoListFlow.cs" />
+    <Compile Include="Inventory\PopupProductSearchFlow.cs" />
+    <Compile Include="Inventory\StockCheckFlow.cs" />
+    <Compile Include="Inventory\StockinProductionFlow.cs" />
+    <Compile Include="Inventory\StockMovementSearchFlow.cs" />
+    <Compile Include="Inventory\WH\PlanDetailPopupFlow.cs" />
+    <Compile Include="Inventory\WH\PlanWHFlow.cs" />
+    <Compile Include="Inventory\WH\StockoutWHFlow.cs" />
+    <Compile Include="Inventory\WH\ProductFlow.cs" />
+    <Compile Include="Inventory\WH\ProductMonthFlow.cs" />
+    <Compile Include="Inventory\WH\StockoutFlow.cs" />
+    <Compile Include="Inventory\WH\ToDoListFlow.cs" />
+    <Compile Include="MenuFlow.cs" />
+    <Compile Include="Production\BomFlow.cs" />
+    <Compile Include="Production\PDProductQCFlow.cs" />
+    <Compile Include="Production\PlanPDFlow.cs" />
+    <Compile Include="Production\ProductionToDoListFlow.cs" />
+    <Compile Include="Production\QCAnalysisFlow.cs" />
+    <Compile Include="Production\ReturnRequestFlow.cs" />
+    <Compile Include="Production\PDProductFlow.cs" />
+    <Compile Include="Production\PopupProductFlow.cs" />
+    <Compile Include="Production\ProductionFlow.cs" />
+    <Compile Include="Production\ProductReserveFlow.cs" />
+    <Compile Include="Production\SearchRequestPopupFlow.cs" />
+    <Compile Include="Production\StockinQCFlow.cs" />
+    <Compile Include="Production\TodoListProductAnalysisFlow.cs" />
+    <Compile Include="ProductStockAdjustFlow.cs" />
+    <Compile Include="Purchase\EditPOFlow.cs" />
+    <Compile Include="Purchase\PDOrderFlow.cs" />
+    <Compile Include="Purchase\PDReturnFlow.cs" />
+    <Compile Include="Purchase\PlanPOFlow.cs" />
+    <Compile Include="Purchase\PurchaseOrderFlow.cs" />
+    <Compile Include="Purchase\PurchaseRequestFlow.cs" />
+    <Compile Include="Purchase\PurchaseToDoListFlow.cs" />
+    <Compile Include="Purchase\SupplierFlow.cs" />
+    <Compile Include="Purchase\SupplierSearchFlow.cs" />
+    <Compile Include="Reports\ReportsFlow.cs" />
+    <Compile Include="Sales\BillFlow.cs" />
+    <Compile Include="Sales\MemberTypeFlow.cs" />
+    <Compile Include="Sales\PlanOrderSaleFlow.cs" />
+    <Compile Include="Sales\PlanSaleFlow.cs" />
+    <Compile Include="Sales\ProductMasterFlow.cs" />
+    <Compile Include="Sales\ReturnProductFlow.cs" />
+    <Compile Include="Sales\ReturnRequestFlow.cs" />
+    <Compile Include="Sales\ReturnSearchFlow.cs" />
+    <Compile Include="Sales\ReturnTesterFlow.cs" />
+    <Compile Include="Sales\ControlStockFlow.cs" />
+    <Compile Include="Sales\PopUpInvoiceFlow.cs" />
+    <Compile Include="Sales\ProductRequestInFlow.cs" />
+    <Compile Include="Sales\CreditCardFlow.cs" />
+    <Compile Include="Sales\InvoiceFlow.cs" />
+    <Compile Include="Sales\PackageFlow.cs" />
+    <Compile Include="Sales\PointOfSaleFlow.cs" />
+    <Compile Include="Sales\ProductFlow.cs" />
+    <Compile Include="Common\ComboSourceFlow.cs" />
+    <Compile Include="GenerateFlow.cs" />
+    <Compile Include="OracleDBObj.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\ProductOrderFlow.cs" />
+    <Compile Include="Sales\ProductReserveFlow.cs" />
+    <Compile Include="Sales\CustomerFlow.cs" />
+    <Compile Include="Sales\CustomerSearchFlow.cs" />
+    <Compile Include="Sales\ProductGroupFlow.cs" />
+    <Compile Include="Sales\ProductTypeFlow.cs" />
+    <Compile Include="Sales\PromotionSaleFlow.cs" />
+    <Compile Include="Sales\SaleFlow.cs" />
+    <Compile Include="Sales\SaleInvoiceFlow.cs" />
+    <Compile Include="Sales\StockInReturnFlow.cs" />
+    <Compile Include="Sales\StockInShopFlow.cs" />
+    <Compile Include="Sales\SupportFlow.cs" />
+    <Compile Include="Sales\ToDoListFlow.cs" />
+    <Compile Include="Sales\UnitFlow.cs" />
+    <Compile Include="Sales\UploadDataFlow.cs" />
+    <Compile Include="Search\SearchFlow.cs" />
+    <Compile Include="Sales\SupportSearchFlow.cs" />
+    <Compile Include="SysConfigFlow.cs" />
+    <Compile Include="UserFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{130D3235-5567-4B27-A0B9-EAAADABFA3C2}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{18240ECE-D226-4D6F-8F68-B58DB0FF233D}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

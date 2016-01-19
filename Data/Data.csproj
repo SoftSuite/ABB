@@ -1,0 +1,252 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18240ECE-D226-4D6F-8F68-B58DB0FF233D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABB.Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\BankData.cs" />
+    <Compile Include="Admin\CreditCardData.cs" />
+    <Compile Include="Admin\DepartmentData.cs" />
+    <Compile Include="Admin\DivisionData.cs" />
+    <Compile Include="Admin\MessageData.cs" />
+    <Compile Include="Admin\OfficerData.cs" />
+    <Compile Include="Admin\PositionData.cs" />
+    <Compile Include="Admin\SysConfigData.cs" />
+    <Compile Include="Admin\TitleData.cs" />
+    <Compile Include="CustomerSaleData.cs" />
+    <Compile Include="GlobalErrorMessage.cs" />
+    <Compile Include="Handheld\Common\ProductSearchData.cs" />
+    <Compile Include="Handheld\Common\StockCheckBatchData.cs" />
+    <Compile Include="Handheld\Common\StockCheckBatchItemData.cs" />
+    <Compile Include="Handheld\Common\StockCheckItemData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInPOData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInPOProductDetailData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInProductData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInProductDetailData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInQCData.cs" />
+    <Compile Include="Handheld\Common\StockIn\StockInQCProductDetailData.cs" />
+    <Compile Include="Handheld\FG\StockOutFGData.cs" />
+    <Compile Include="Handheld\FG\StockOutItemFGData.cs" />
+    <Compile Include="Handheld\WH\StockInProductQCData.cs" />
+    <Compile Include="Handheld\WH\StockInProductReceiveData.cs" />
+    <Compile Include="Handheld\WH\StockOutItemWHData.cs" />
+    <Compile Include="Handheld\WH\StockOutWHData.cs" />
+    <Compile Include="Inventory\FG\BasketItemData.cs" />
+    <Compile Include="Inventory\FG\ToDoListExpireData.cs" />
+    <Compile Include="Inventory\FG\CtrlDeliveryData.cs" />
+    <Compile Include="Inventory\FG\CtrlDeliveryItemData.cs" />
+    <Compile Include="Inventory\FG\Master\BasketData.cs" />
+    <Compile Include="Inventory\FG\Master\BasketSearchData.cs" />
+    <Compile Include="Inventory\FG\Master\BasketSearchResultData.cs" />
+    <Compile Include="Inventory\FG\Master\ControlStockData.cs" />
+    <Compile Include="Inventory\FG\Master\ControlStockResultData.cs" />
+    <Compile Include="Inventory\FG\Master\ControlStockSearchData.cs" />
+    <Compile Include="Inventory\FG\PlanDetailData.cs" />
+    <Compile Include="Inventory\FG\PlanDetailSearchData.cs" />
+    <Compile Include="Inventory\FG\PlanPopupData.cs" />
+    <Compile Include="Inventory\FG\PlanSearchData.cs" />
+    <Compile Include="Inventory\FG\POItemData.cs" />
+    <Compile Include="Inventory\FG\StockInFGData.cs" />
+    <Compile Include="Inventory\FG\StockinReturnData.cs" />
+    <Compile Include="Inventory\FG\StockinReturnItemData.cs" />
+    <Compile Include="Inventory\FG\StockinReturnSearchData.cs" />
+    <Compile Include="Inventory\FG\StockoutBasketData.cs" />
+    <Compile Include="Inventory\FG\StockoutBasketSearchData.cs" />
+    <Compile Include="Inventory\FG\StockoutFGData.cs" />
+    <Compile Include="Inventory\FG\StockOutFGItemData.cs" />
+    <Compile Include="Inventory\FG\StockOutFGReqData.cs" />
+    <Compile Include="Inventory\FG\StockOutFGSearchData.cs" />
+    <Compile Include="Inventory\FG\StockoutSearchData.cs" />
+    <Compile Include="Inventory\FG\SupplierData.cs" />
+    <Compile Include="Inventory\FG\ToDoListMinimumStockData.cs" />
+    <Compile Include="Inventory\FG\ToDoListMinimumStockRequestData.cs" />
+    <Compile Include="Inventory\FG\ToDoListMinimumStockRequestItemData.cs" />
+    <Compile Include="Inventory\FG\ToDoListStockInData.cs" />
+    <Compile Include="Inventory\FG\ToDoListStockinOrderData.cs" />
+    <Compile Include="Inventory\FG\ToDoListStockInOrderItemData.cs" />
+    <Compile Include="Inventory\FG\ToDoListStockOutData.cs" />
+    <Compile Include="Inventory\StockCheckData.cs" />
+    <Compile Include="Inventory\StockCheckImproveData.cs" />
+    <Compile Include="Inventory\StockCheckSearchData.cs" />
+    <Compile Include="Inventory\StockinProductData.cs" />
+    <Compile Include="Inventory\StockinProductSearchData.cs" />
+    <Compile Include="Inventory\StockMovementSearchData.cs" />
+    <Compile Include="Inventory\WH\PlanDetailData.cs" />
+    <Compile Include="Inventory\WH\PlanDetailSearchData.cs" />
+    <Compile Include="Inventory\WH\PlanPopupData.cs" />
+    <Compile Include="Inventory\WH\PlanSearchData.cs" />
+    <Compile Include="Inventory\WH\ProductData.cs" />
+    <Compile Include="Inventory\WH\ProductMonthData.cs" />
+    <Compile Include="Inventory\WH\StockoutWHData.cs" />
+    <Compile Include="Inventory\WH\StockoutSearchData.cs" />
+    <Compile Include="Inventory\WH\StockOutWHItemData.cs" />
+    <Compile Include="PlanData.cs" />
+    <Compile Include="Production\BomData.cs" />
+    <Compile Include="Production\BomProductData.cs" />
+    <Compile Include="Production\BomSearchData.cs" />
+    <Compile Include="Production\PDOrderData.cs" />
+    <Compile Include="Production\PDProductData.cs" />
+    <Compile Include="Production\PlanDetailSearchData.cs" />
+    <Compile Include="Production\ProductionDuringListSearchData.cs" />
+    <Compile Include="Production\ProductionLostSearchData.cs" />
+    <Compile Include="Production\ProductionQCSearchData.cs" />
+    <Compile Include="Production\ProductionWaitListSearchData.cs" />
+    <Compile Include="Production\ProductMaterialData.cs" />
+    <Compile Include="Production\ProductStockoutQuarantineSearchData.cs" />
+    <Compile Include="Production\PDProductSearchData.cs" />
+    <Compile Include="Production\PDReserveData.cs" />
+    <Compile Include="Production\PDReserveItemData.cs" />
+    <Compile Include="Production\PDReserveSearchData.cs" />
+    <Compile Include="Production\ProcessData.cs" />
+    <Compile Include="Production\ProductStockinQuarantineSearchData.cs" />
+    <Compile Include="Production\QCAnalysisData.cs" />
+    <Compile Include="Production\QCAnalysisSearchData.cs" />
+    <Compile Include="Production\ReqMaterialData.cs" />
+    <Compile Include="Production\ReturnItemData.cs" />
+    <Compile Include="Production\ReturnRequestData.cs" />
+    <Compile Include="Production\ReturnRequestSearchData.cs" />
+    <Compile Include="Production\StockinQCData.cs" />
+    <Compile Include="ProductSaleData.cs" />
+    <Compile Include="ProductStockAdjustData.cs" />
+    <Compile Include="Purchase\PlanDetailSearchData.cs" />
+    <Compile Include="Purchase\POEditData.cs" />
+    <Compile Include="Purchase\POItemData.cs" />
+    <Compile Include="Purchase\PRItemData.cs" />
+    <Compile Include="Purchase\ProductPurchaseListSearchData.cs" />
+    <Compile Include="Purchase\ProductReceiveListSearchData.cs" />
+    <Compile Include="Purchase\ProductReturnData.cs" />
+    <Compile Include="Purchase\ProductReturnItemData.cs" />
+    <Compile Include="Purchase\PurchaseOrderData.cs" />
+    <Compile Include="Purchase\PurchaseOrderSearchData.cs" />
+    <Compile Include="Purchase\PurchaseRequestData.cs" />
+    <Compile Include="Purchase\PurchaseRequestSearchData.cs" />
+    <Compile Include="Purchase\SupplierData.cs" />
+    <Compile Include="Purchase\SupplierResultData.cs" />
+    <Compile Include="Purchase\SupplierSearchData.cs" />
+    <Compile Include="ReportParameterData.cs" />
+    <Compile Include="RequisitionData.cs" />
+    <Compile Include="RequisitionItemData.cs" />
+    <Compile Include="Sales\BillData.cs" />
+    <Compile Include="Sales\DiscountStepData.cs" />
+    <Compile Include="Sales\MemberTypeData.cs" />
+    <Compile Include="Sales\PlanItemSearchData.cs" />
+    <Compile Include="Sales\PlanMarketingData.cs" />
+    <Compile Include="Sales\PlanOrderData.cs" />
+    <Compile Include="Sales\PlanOrderSaleData.cs" />
+    <Compile Include="Sales\PlanOrderSearchData.cs" />
+    <Compile Include="Sales\ControlStockData.cs" />
+    <Compile Include="Sales\ControlStockSearchData.cs" />
+    <Compile Include="Sales\CreditCardData.cs" />
+    <Compile Include="Sales\InvoiceReturnData.cs" />
+    <Compile Include="Sales\PackageSearchData.cs" />
+    <Compile Include="Sales\PointOfSaleData.cs" />
+    <Compile Include="Sales\PointOfSaleRefData.cs" />
+    <Compile Include="Sales\PointOfSaleRefItemData.cs" />
+    <Compile Include="Sales\ProductBarcodeData.cs" />
+    <Compile Include="Sales\ProductOrderData.cs" />
+    <Compile Include="Sales\ProductOrderSearchData.cs" />
+    <Compile Include="Sales\ProductTesterData.cs" />
+    <Compile Include="Sales\ProductTypeData.cs" />
+    <Compile Include="Common\CommonData.cs" />
+    <Compile Include="Constz.cs" />
+    <Compile Include="GenerateData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\CustomerData.cs" />
+    <Compile Include="Sales\CustomerResultData.cs" />
+    <Compile Include="Sales\CustomerSearchData.cs" />
+    <Compile Include="Sales\ProductGroupData.cs" />
+    <Compile Include="Sales\ProductSearchData.cs" />
+    <Compile Include="Sales\ProductTypeSearchData.cs" />
+    <Compile Include="Sales\PromotionSaleData.cs" />
+    <Compile Include="Sales\ProductReserveSearchData.cs" />
+    <Compile Include="Sales\ProductReserveData.cs" />
+    <Compile Include="Sales\PromotionSalesItemData.cs" />
+    <Compile Include="Sales\InvoiceRequestData.cs" />
+    <Compile Include="Sales\ReturnSearchData.cs" />
+    <Compile Include="Sales\ReturnTesterData.cs" />
+    <Compile Include="Sales\ReturnTesterItemData.cs" />
+    <Compile Include="Sales\ReturnTesterSearchData.cs" />
+    <Compile Include="Sales\SalePayData.cs" />
+    <Compile Include="Sales\StockInReturnData.cs" />
+    <Compile Include="Sales\StockInReturnSearchData.cs" />
+    <Compile Include="Sales\StockInShopSearchData.cs" />
+    <Compile Include="Sales\ToDoListData.cs" />
+    <Compile Include="Sales\UnitSearchData.cs" />
+    <Compile Include="Sales\V_Product_List_RequisitionData.cs" />
+    <Compile Include="Search\InvoiceForReturnSearchData.cs" />
+    <Compile Include="Search\InvoiceRequestSearchData.cs" />
+    <Compile Include="Search\PopupPOSearchData.cs" />
+    <Compile Include="Search\PopupProductPRSearchData.cs" />
+    <Compile Include="Search\PopupStockinReturnData.cs" />
+    <Compile Include="Search\PopupStockinReturnSearchData.cs" />
+    <Compile Include="Search\PopupStockoutBasketData.cs" />
+    <Compile Include="Search\PopupStockoutSearchData.cs" />
+    <Compile Include="Search\SearchCustomerData.cs" />
+    <Compile Include="Search\SearchInvoiceData.cs" />
+    <Compile Include="Search\SearchProductData.cs" />
+    <Compile Include="Search\SearchProductPlanData.cs" />
+    <Compile Include="Search\SearchSaleData.cs" />
+    <Compile Include="Search\StockOutProductSearchData.cs" />
+    <Compile Include="StockInData.cs" />
+    <Compile Include="StockInItemData.cs" />
+    <Compile Include="Sales\StockInShopData.cs" />
+    <Compile Include="StockOutData.cs" />
+    <Compile Include="StockOutItemData.cs" />
+    <Compile Include="UserData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+C:\ABB\Sourcecode\Flow\bin\Debug\Flow.dll
+C:\ABB\Sourcecode\Flow\bin\Debug\Flow.pdb
+C:\ABB\Sourcecode\Flow\bin\Debug\DAL.dll
+C:\ABB\Sourcecode\Flow\bin\Debug\Data.dll
+C:\ABB\Sourcecode\Flow\bin\Debug\DAL.pdb
+C:\ABB\Sourcecode\Flow\bin\Debug\Data.pdb
+C:\ABB\Sourcecode\Flow\obj\Debug\ResolveAssemblyReference.cache
+C:\ABB\Sourcecode\Flow\obj\Debug\Flow.dll
+C:\ABB\Sourcecode\Flow\obj\Debug\Flow.pdb

@@ -1,0 +1,10 @@
+D:\MyProject\www\APB\ABB System\Data\bin\Debug\Data.dll
+D:\MyProject\www\APB\ABB System\Data\bin\Debug\Data.pdb
+D:\MyProject\www\APB\ABB System\Data\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\www\APB\ABB System\Data\obj\Debug\Data.dll
+D:\MyProject\www\APB\ABB System\Data\obj\Debug\Data.pdb
+D:\MyProject\APB\ABB System\Data\bin\Debug\Data.dll
+D:\MyProject\APB\ABB System\Data\bin\Debug\Data.pdb
+D:\MyProject\APB\ABB System\Data\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\APB\ABB System\Data\obj\Debug\Data.dll
+D:\MyProject\APB\ABB System\Data\obj\Debug\Data.pdb

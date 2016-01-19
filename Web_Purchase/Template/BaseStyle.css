@@ -1,0 +1,42 @@
+body, td, th { font-family:Tahoma; font-size: 10pt; }
+
+/* Header */
+.header_bg_logo{ background-image:url(../Images/head_bg1.png); height:75px; background-repeat: no-repeat;}
+.header_bg_all{ background-image:url(../Images/head_bg2.png); }
+
+/* Toolbar */
+.toolbarbutton { font-family:Tahoma; display:inline-block; padding-right: 4px; padding-left: 4px; padding-bottom: 3px; padding-top: 3px; text-decoration:none; }
+.toolbarbuttonhover { font-family:Tahoma; display:inline-block; background-color:#AFEEEE;border-color:#DDCCFF;border-width:1px;border-style:solid; padding-right: 3px; padding-left: 3px; padding-bottom: 2px; padding-top: 2px; text-decoration:none; }
+
+/* Login View*/
+.logindata { font-family:Tahoma; font-size:8pt; color:Navy }
+.logoutbutton { font-family: Tahoma; font-size: 8pt; background-color:Green; border-style:solid; border-color:Lime; border-width:1px; color:#C0FFC0; display:inline-block; padding:2px; }
+.loginbutton { font-family: Tahoma; font-size: 8pt; background-color:Green; border-style:solid; border-color:Lime; border-width:1px; color:#C0FFC0; display:inline-block; padding:2px; height:23px; cursor:pointer}
+
+.headtext { font-size: 11pt; font-weight: bold; color: #FFFFFF; background-color:#6E8B33; height:27px;}
+.subheadertext {font-size: 10pt; font-weight: bold; background-color:#CBDAA9; height:24px;}
+.toolbarplace { background-color:#DDFFFF; height:27px;}
+
+.tabtext { text-decoration:none; font-family: Tahoma; font-size: 10pt;}
+
+/* Controls */
+.zTextbox { font-family: Tahoma; font-size: 10pt; }
+.zTextbox-View {  font-family:Tahoma; font-size:10pt; height:20px; border:none; color:#0000BB; background-color:#DDDDDD; vertical-align:baseline; }
+.zTextboxR { font-family: Tahoma; font-size: 10pt; text-align:right; }
+.zTextboxR-View {  font-family:Tahoma; font-size:10pt; height:20px; border:none; color:#0000BB; background-color:#DDDDDD; vertical-align:baseline; text-align:right; }
+.zComboBox { font-family: Tahoma; font-size: 10pt; height:22px; }
+.zButton { font-family: Tahoma; font-size: 10pt; height:23px }
+.zHidden { display:none }
+.zRemark { font-family: Tahoma; font-size: 10pt; font-weight:bold; height:20px; color:Red; }
+
+/* table results */
+.t_tablestyle { table-layout: fixed; border-width: 1px; BORDER-TOP: thin outset; BORDER-BOTTOM: thin outset; border-right: thin outset; BORDER-LEFT: thin outset}
+.t_headtext { font-weight:bold; color:#000000; background-color: #CBDAA9;}
+.t_alt_bg { background-color: #D6D6D6; }
+.t_selectstyle { background-color: #0000AA; color:#FFFFFF;}
+
+.searchTable { border-right: #cbdaa9 1px solid; border-top: #cbdaa9 1px solid; border-left: #cbdaa9 1px solid; border-bottom: #cbdaa9 1px solid }
+
+.planhover { font-family:Tahoma; display:inline-block; background-color:#DDFFFF; border-color:Green; border-width:1px;border-style:solid; text-decoration:none;}
+.planbutton { font-family:Tahoma; display:inline-block; padding-right: 4px; padding-left: 4px; padding-bottom: 3px; padding-top: 3px; text-decoration:none; color:Black; }
+.planholiday { font-family:Tahoma; background-color:#DBDBDA;}

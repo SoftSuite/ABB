@@ -1,0 +1,13 @@
+C:\ABB\Sourcecode\WebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\ABB\Sourcecode\WebControls\obj\Debug\WebControls.pdb
+C:\ABB\Sourcecode\WebControls\bin\Debug\WebControls.dll
+C:\ABB\Sourcecode\WebControls\bin\Debug\WebControls.pdb
+C:\ABB\Sourcecode\WebControls\bin\Debug\DAL.dll
+C:\ABB\Sourcecode\WebControls\bin\Debug\Data.dll
+C:\ABB\Sourcecode\WebControls\bin\Debug\Flow.dll
+C:\ABB\Sourcecode\WebControls\bin\Debug\Global.dll
+C:\ABB\Sourcecode\WebControls\bin\Debug\Flow.pdb
+C:\ABB\Sourcecode\WebControls\bin\Debug\DAL.pdb
+C:\ABB\Sourcecode\WebControls\bin\Debug\Global.pdb
+C:\ABB\Sourcecode\WebControls\bin\Debug\Data.pdb
+C:\ABB\Sourcecode\WebControls\obj\Debug\WebControls.dll

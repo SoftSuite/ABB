@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterBody.master.cs" Inherits="MasterBody" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>President Bakery </title>
+    <link href="BaseStyle.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="<%Response.Write(ABB.Data.Constz.HomeFolder);%>Template/BaseScript.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body style="margin:0">
+    <form id="form1" runat="server">
+    <div>
+        <table id="tblLogonMain" border="1" cellpadding="2" cellspacing="0"
+            height="220" width="220px" bordercolor="99CC99">
+            <tr>
+                <td align="center" style="height:20px" class="header">
+                    Abhaibhubej&nbsp; HHT System</td>
+            </tr>
+            <tr>
+                <td align="center" valign="top" height="200px">
+        <asp:contentplaceholder id="MainForm" runat="server">
+        </asp:contentplaceholder>
+        </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
+

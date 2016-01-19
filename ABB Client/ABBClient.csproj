@@ -1,0 +1,631 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{132CD2B9-18B2-4172-94B8-056A1B13880C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABBClient</RootNamespace>
+    <AssemblyName>ABBClient</AssemblyName>
+    <StartupObject>ABBClient.Program</StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>ABB.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>16DFD813A80A496D649AFBAB6E25EDEC726B6952</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ABBClient_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>\\jaida\Web Application\ABB\AbbClient\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://jaida/AbbClient/</InstallUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_32\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Appz.cs" />
+    <Compile Include="App_Code\POSPrinter.cs" />
+    <Compile Include="App_Code\ControlUtil.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ControlStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ControlStock.Designer.cs">
+      <DependentUpon>ControlStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepProductReturnSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepProductReturnSummary.designer.cs">
+      <DependentUpon>RepProductReturnSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepProductSaleSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepProductSaleSummary.designer.cs">
+      <DependentUpon>RepProductSaleSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepSaleSummaryBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepSaleSummaryBill.designer.cs">
+      <DependentUpon>RepSaleSummaryBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepSendMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepSendMoney.Designer.cs">
+      <DependentUpon>RepSendMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepStockoutDoctype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepStockoutDoctype.Designer.cs">
+      <DependentUpon>RepStockoutDoctype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreReport\RepStockRemain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreReport\RepStockRemain.Designer.cs">
+      <DependentUpon>RepStockRemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Invoice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PreviewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\PreviewReport.Designer.cs">
+      <DependentUpon>PreviewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductReturnSummaryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductReturnSummaryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductSaleSummaryReport.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductSaleSummaryReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductStockInShop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductStockInShop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StockinReturn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockinReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReturnTester.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnTester.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SaleSummaryBillReport.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleSummaryBillReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SendMoneyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SendMoneyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StockoutDoctypeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockoutDoctypeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\StockRemainReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockRemainReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Support.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Support.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search\ProductBarcodePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\ProductBarcodePopup.Designer.cs">
+      <DependentUpon>ProductBarcodePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ProductMasterPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\ProductMasterPopup.Designer.cs">
+      <DependentUpon>ProductMasterPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ProductShopPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\ProductShopPopup.Designer.cs">
+      <DependentUpon>ProductShopPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ControlStock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepProductReturnSummary.resx">
+      <DependentUpon>RepProductReturnSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepProductSaleSummary.resx">
+      <DependentUpon>RepProductSaleSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepSaleSummaryBill.resx">
+      <DependentUpon>RepSaleSummaryBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepSendMoney.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RepSendMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepStockoutDoctype.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RepStockoutDoctype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreReport\RepStockRemain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RepStockRemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Invoice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PreviewReport.resx">
+      <DependentUpon>PreviewReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductReturnSummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductReturnSummaryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductSaleSummaryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductSaleSummaryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductStockInShop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductStockInShop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockinReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockinReturn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReturnTester.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReturnTester.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SaleSummaryBillReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SaleSummaryBillReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SendMoneyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SendMoneyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockoutDoctypeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockoutDoctypeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\StockRemainReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StockRemainReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Support.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Support.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ProductBarcodePopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductBarcodePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ProductMasterPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductMasterPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ProductShopPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductShopPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Bill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\CustomerPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ProductStockInShopPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductStockInShopPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ReturnPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReturnPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\SalePopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\BillSearch.resx">
+      <DependentUpon>BillSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\ProductStock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\ReturnTester.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReturnTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\ReturnTesterEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReturnTesterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\SaleInvoice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\SalesCredit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalesCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\SalesSummary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SalesSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\StockIn.resx">
+      <DependentUpon>StockIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\StockInEdit.resx">
+      <DependentUpon>StockInEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\StockInReturn.resx">
+      <DependentUpon>StockInReturn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\StockInReturnEdit.resx">
+      <DependentUpon>StockInReturnEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Support.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\SupportEdit.resx">
+      <DependentUpon>SupportEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\UploadData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UploadData.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ABBClient_TemporaryKey.pfx" />
+    <None Include="App.config">
+    </None>
+    <None Include="backup.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Search\CustomerPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\CustomerPopup.Designer.cs">
+      <DependentUpon>CustomerPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ProductStockInShopPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\ProductStockInShopPopup.Designer.cs">
+      <DependentUpon>ProductStockInShopPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ReturnPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\ReturnPopup.Designer.cs">
+      <DependentUpon>ReturnPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\SalePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\SalePopup.Designer.cs">
+      <DependentUpon>SalePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\BillSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\BillSearch.Designer.cs">
+      <DependentUpon>BillSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\ProductStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\ProductStock.Designer.cs">
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\ReturnTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReturnTester.Designer.cs">
+      <DependentUpon>ReturnTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\ReturnTesterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\ReturnTesterEdit.Designer.cs">
+      <DependentUpon>ReturnTesterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\SaleInvoice.Designer.cs">
+      <DependentUpon>SaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SalesCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\SalesCredit.Designer.cs">
+      <DependentUpon>SalesCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\SalesSummary.Designer.cs">
+      <DependentUpon>SalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\StockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\StockIn.Designer.cs">
+      <DependentUpon>StockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\StockInEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\StockInEdit.Designer.cs">
+      <DependentUpon>StockInEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\StockInReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\StockInReturn.Designer.cs">
+      <DependentUpon>StockInReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\StockInReturnEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\StockInReturnEdit.Designer.cs">
+      <DependentUpon>StockInReturnEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SupportEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\SupportEdit.Designer.cs">
+      <DependentUpon>SupportEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\UploadData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\UploadData.Designer.cs">
+      <DependentUpon>UploadData.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{18240ECE-D226-4D6F-8F68-B58DB0FF233D}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Flow\Flow.csproj">
+      <Project>{4FC486BA-B5C8-427A-8143-5D571DF3E85E}</Project>
+      <Name>Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Global\Global.csproj">
+      <Project>{58B51848-349B-4E29-9751-3D7755FBCD3D}</Project>
+      <Name>Global</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ABB.ico" />
+    <Content Include="Images\ABB.ico" />
+    <Content Include="Images\Document.gif" />
+    <Content Include="Images\header.bmp" />
+    <Content Include="Images\icn_back.gif" />
+    <Content Include="Images\icn_cancel.gif" />
+    <Content Include="Images\icn_delete.gif" />
+    <Content Include="Images\icn_edit.gif" />
+    <Content Include="Images\icn_new.gif" />
+    <Content Include="Images\icn_print.gif" />
+    <Content Include="Images\icn_return.gif" />
+    <Content Include="Images\icn_save.gif" />
+    <Content Include="Images\icn_submit.gif" />
+    <Content Include="Images\key.gif" />
+    <Content Include="Images\LogOff.gif" />
+    <Content Include="Images\Sales.gif" />
+    <Content Include="Images\Send.gif" />
+    <Content Include="Images\Stock.gif" />
+    <Content Include="Images\Support.gif" />
+    <Content Include="Images\Total.gif" />
+    <Content Include="Images\view.gif" />
+    <Content Include="ndpsetup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,231 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{130D3235-5567-4B27-A0B9-EAAADABFA3C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABB.DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\DepartmentDAL.cs" />
+    <Compile Include="Admin\DivisionDAL.cs" />
+    <Compile Include="Admin\PositionDAL.cs" />
+    <Compile Include="BankDAL.cs" />
+    <Compile Include="BasketDAL.cs" />
+    <Compile Include="BasketItemDAL.cs" />
+    <Compile Include="BomDAL.cs" />
+    <Compile Include="Common\ComboSourceDAL.cs" />
+    <Compile Include="CreditCardDAL.cs" />
+    <Compile Include="CtrlDeliveryDAL.cs" />
+    <Compile Include="CtrlDeliveryItemDAL.cs" />
+    <Compile Include="DiscountStepDAL.cs" />
+    <Compile Include="DocTypeDAL.cs" />
+    <Compile Include="Handheld\FG\StockInPDDAL.cs" />
+    <Compile Include="Handheld\FG\StockInPODAL.cs" />
+    <Compile Include="Handheld\FG\StockOutFGDAL.cs" />
+    <Compile Include="Handheld\StockCheckBatchDAL.cs" />
+    <Compile Include="Handheld\WH\StockInPDDAL.cs" />
+    <Compile Include="Handheld\WH\StockInPODAL.cs" />
+    <Compile Include="Handheld\WH\StockOutWHDAL.cs" />
+    <Compile Include="Inventory\FG\PlanInventoryDAL.cs" />
+    <Compile Include="Inventory\FG\StockinReturnDAL.cs" />
+    <Compile Include="Inventory\FG\ToDoListDAL.cs" />
+    <Compile Include="Inventory\FG\TransportDAL.cs" />
+    <Compile Include="Inventory\PopupProductSearchDAL.cs" />
+    <Compile Include="Inventory\StockFGDAL.cs" />
+    <Compile Include="Inventory\WH\PlanWHDAL.cs" />
+    <Compile Include="Inventory\WH\StockWHDAL.cs" />
+    <Compile Include="Inventory\WH\ToDoListDAL.cs" />
+    <Compile Include="LocationDAL.cs" />
+    <Compile Include="MaterialItemDAL.cs" />
+    <Compile Include="MessageDAL.cs" />
+    <Compile Include="OfficerDAL.cs" />
+    <Compile Include="OfficerPositionDAL.cs" />
+    <Compile Include="PDOrderDAL.cs" />
+    <Compile Include="PDProductDAL.cs" />
+    <Compile Include="PDRequestDAL.cs" />
+    <Compile Include="PDReturnDAL.cs" />
+    <Compile Include="PDReturnItemDAL.cs" />
+    <Compile Include="PlanDAL.cs" />
+    <Compile Include="PlanMarketDAL.cs" />
+    <Compile Include="PlanOrderDAL.cs" />
+    <Compile Include="PlanOrderSaleDAL.cs" />
+    <Compile Include="PlanProduceDAL.cs" />
+    <Compile Include="PlanPurchaseDAL.cs" />
+    <Compile Include="PlanReceiveDAL.cs" />
+    <Compile Include="PlanReceiveItemDAL.cs" />
+    <Compile Include="PlanRemainDAL.cs" />
+    <Compile Include="PlanSaleDAL.cs" />
+    <Compile Include="PlanUseDAL.cs" />
+    <Compile Include="POEditDAL.cs" />
+    <Compile Include="POItemDAL.cs" />
+    <Compile Include="PopUpInvoiceDAL.cs" />
+    <Compile Include="PRItemDAL.cs" />
+    <Compile Include="ProcessDAL.cs" />
+    <Compile Include="ProductBarcodeDAL.cs" />
+    <Compile Include="Production\BomSearchDAL.cs" />
+    <Compile Include="Production\PDProductSearchDAL.cs" />
+    <Compile Include="Production\PDReserveDAL.cs" />
+    <Compile Include="Production\PlanPDDAL.cs" />
+    <Compile Include="Production\PopupProductDAL.cs" />
+    <Compile Include="Production\ProductionSearchDAL.cs" />
+    <Compile Include="Production\ProductMaterial.cs" />
+    <Compile Include="Production\ProductReserveItemDAL.cs" />
+    <Compile Include="Production\QCAnalysisDAL.cs" />
+    <Compile Include="Production\QCAnalysisPDDAL.cs" />
+    <Compile Include="Production\QCAnalysisSearchDAL.cs" />
+    <Compile Include="Production\ReturnRequestDAL.cs" />
+    <Compile Include="Production\SearchRequestPopupDAL.cs" />
+    <Compile Include="ProductMasterDAL.cs" />
+    <Compile Include="ProductMinMaxDAL.cs" />
+    <Compile Include="CustomerDAL.cs" />
+    <Compile Include="MemberTypeDAL.cs" />
+    <Compile Include="OracleDB.cs" />
+    <Compile Include="PackageDAL.cs" />
+    <Compile Include="ProductGroupDAL.cs" />
+    <Compile Include="ProductDAL.cs" />
+    <Compile Include="ProductMonthDAL.cs" />
+    <Compile Include="ProductStockDAL.cs" />
+    <Compile Include="ProductStockAjustDAL.cs" />
+    <Compile Include="ProductTypeDAL.cs" />
+    <Compile Include="PromotionDAL.cs" />
+    <Compile Include="PromotionItemDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\PlanPODAL.cs" />
+    <Compile Include="ReqMaterialDAL.cs" />
+    <Compile Include="RequisitionTypeDAL.cs" />
+    <Compile Include="Sales\BillDAL.cs" />
+    <Compile Include="Sales\ControlStockDAL.cs" />
+    <Compile Include="Sales\PlanForSaleDAL.cs" />
+    <Compile Include="Sales\ProductGroupDAL.cs" />
+    <Compile Include="Sales\ProductRequestInDAL.cs" />
+    <Compile Include="Sales\InvoiceDAL.cs" />
+    <Compile Include="Sales\PointOfSaleDAL.cs" />
+    <Compile Include="Sales\ProductOrderDAL.cs" />
+    <Compile Include="Sales\ProductSearchDAL.cs" />
+    <Compile Include="Sales\SaleInvoiceDAL.cs" />
+    <Compile Include="Sales\StockInReturnDAL.cs" />
+    <Compile Include="Sales\StockInReturnViewDAL.cs" />
+    <Compile Include="Sales\StockInShopDAL.cs" />
+    <Compile Include="Sales\PromotionSaleDAL.cs" />
+    <Compile Include="Sales\PurchaseDAL.cs" />
+    <Compile Include="RequisitionDAL.cs" />
+    <Compile Include="RequisitionItemDAL.cs" />
+    <Compile Include="Sales\ReturnProductDAL.cs" />
+    <Compile Include="Sales\ReturnRequestDAL.cs" />
+    <Compile Include="Sales\ReturnTesterDAL.cs" />
+    <Compile Include="Sales\SaleCustomerDAL.cs" />
+    <Compile Include="Sales\SaleDAL.cs" />
+    <Compile Include="Sales\ToDoListDAL.cs" />
+    <Compile Include="Sales\V_SUPPORT_LIST_DAL.cs" />
+    <Compile Include="Search\SearchDAL.cs" />
+    <Compile Include="StockCheckDAL.cs" />
+    <Compile Include="StockCheckImproveDAL.cs" />
+    <Compile Include="StockCheckItemDAL.cs" />
+    <Compile Include="StockInDAL.cs" />
+    <Compile Include="StockInItemDAL.cs" />
+    <Compile Include="StockOutDAL.cs" />
+    <Compile Include="StockOutItemDAL.cs" />
+    <Compile Include="SupplierDAL.cs" />
+    <Compile Include="SysConfigDAL.cs" />
+    <Compile Include="TitleDAL.cs" />
+    <Compile Include="UnitDAL.cs" />
+    <Compile Include="VProductReturnrequest.cs" />
+    <Compile Include="WarehouseDAL.cs" />
+    <Compile Include="ZoneDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{18240ECE-D226-4D6F-8F68-B58DB0FF233D}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

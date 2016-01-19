@@ -1,0 +1,7 @@
+C:\ABB\Sourcecode\DAL\bin\Debug\DAL.dll
+C:\ABB\Sourcecode\DAL\bin\Debug\DAL.pdb
+C:\ABB\Sourcecode\DAL\bin\Debug\Data.dll
+C:\ABB\Sourcecode\DAL\bin\Debug\Data.pdb
+C:\ABB\Sourcecode\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\ABB\Sourcecode\DAL\obj\Debug\DAL.dll
+C:\ABB\Sourcecode\DAL\obj\Debug\DAL.pdb

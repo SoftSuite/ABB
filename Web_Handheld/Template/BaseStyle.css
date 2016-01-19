@@ -1,0 +1,47 @@
+body, td, th { font-family:Tahoma; font-size:8pt; }
+
+/* hht */
+.header { background-color:#00AA00; color: White; font-size:8pt; font-weight:bold; height:30px}
+.tablehead { background-color:#CCCCCC }
+.tablefoot { background-color:#DDDDDD }
+.tablealt { background-color:#DDFFDD}
+
+
+/* Header */
+.header_bg_logo{ background-image:url(../Images/head_bg1.png); height:75px; }
+.header_bg_all{ background-image:url(../Images/head_bg2.png); }
+
+/* Toolbar */
+.toolbarbutton { font-family:Tahoma; display:inline-block; padding-right: 4px; padding-left: 4px; padding-bottom: 3px; padding-top: 3px; text-decoration:none; }
+.toolbarbuttonhover { font-family:Tahoma; display:inline-block; background-color:#AFEEEE;border-color:#DDCCFF;border-width:1px;border-style:solid; padding-right: 3px; padding-left: 3px; padding-bottom: 2px; padding-top: 2px; text-decoration:none; }
+
+.headtext { font-size: 9pt; font-weight: bold; color: #FFFFFF; background-color:#6E8B33; height:25px;}
+.subheadertext {font-size: 8pt; font-weight: bold; background-color:#CBDAA9; height:25px;}
+.toolbarplace { background-color:#DDFFFF; height:25px;}
+
+.tabtext { text-decoration:none; font-family: Tahoma; font-size: 8pt;}
+
+/* Controls */
+.zTextbox { font-family: Tahoma; font-size: 8pt; }
+.zTextbox-View {  font-family:Tahoma; font-size:8pt; height:18px; border:none; color:#0000BB; background-color:#DDDDDD; vertical-align:baseline; }
+.zTextboxR { font-family: Tahoma; font-size: 8pt; text-align:right;}
+.zTextboxR-View {  font-family:Tahoma; font-size:8pt; height:18px; border:none; color:#0000BB; background-color:#DDDDDD; vertical-align:baseline; text-align:right; }
+.zComboBox { font-family: Tahoma; font-size: 8pt; height:20px; }
+.zuButton { font-family: Tahoma; font-size: 8pt; height:20px }
+.zHidden { display:none }
+.zRemark { font-family: Tahoma; font-size: 8pt; font-weight:bold; height:20px; color:Red; }
+
+/* table results */
+.t_tablestyle { table-layout: fixed; border-width: 1px; BORDER-TOP: thin outset; BORDER-BOTTOM: thin outset; border-right: thin outset; BORDER-LEFT: thin outset}
+.t_headtext { font-weight:bold; color:#000000; background-color: #CBDAA9;}
+.t_alt_bg { background-color: #D6D6D6; }
+.t_selectstyle { background-color: #0000AA; color:#FFFFFF;}
+
+.searchTable { border-right: #cbdaa9 1px solid; border-top: #cbdaa9 1px solid; border-left: #cbdaa9 1px solid; border-bottom: #cbdaa9 1px solid }
+.messageLayer { height:75px; vertical-align:middle; border-right: #CBDAA9 1px solid; border-top: #CBDAA9 1px solid; border-left: #CBDAA9 1px solid; border-bottom: #CBDAA9 1px solid; background-color:#DEE7C8; }
+/*
+.messageLayer { width: 202px; height:75px; position:absolute; z-index:999; left:5px; top:130px; vertical-align:middle; 
+	border-right: #CBDAA9 1px solid; border-top: #CBDAA9 1px solid; border-left: #CBDAA9 1px solid; border-bottom: #CBDAA9 1px solid; background-color:#DEE7C8; }
+*/
+.logoutbutton { font-family: Tahoma; font-size: 7pt; background-color:Green; border-style:solid; border-color:Lime; border-width:1px; color:#C0FFC0; display:inline-block; padding:1px; text-decoration:none; }
+.hButton { padding-bottom:2px; padding-top:2px; padding-left:5px; padding-right:5px; text-align:center; font-family: Tahoma; font-size: 8pt; background-color:#008000; border-style:solid; border-color:#00cc33; border-width:1px; color:#FFFFFF; display:inline-block; text-decoration:none; }
